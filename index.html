@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Poppins:500,500italic,600,600italic,700,700italic&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:regular&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="./css/style.min.css">
+    <title>Авторитет</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+    <div class="header__container">
+        <div class="header__content_absol">
+            <div class="header__contacts">
+                <div class="header__contact">
+                    <a href="#" class="header__contact-item">Связаться с нами</a>
+                    <p class="header__contact-item">+7(920)447-86-43</p>
+                    <p class="header__contact-item">autoritet@mail.ru</p>
+                </div>
+                <ul class="header__link">
+                    <li class="header__item-link"><a href="#">Блог</a></li>
+                    <li class="header__item-link"><a href="#">О нас</a></li>
+                    <li class="header__item-link"><a href="#">Карьера</a></li>
+                </ul>
+            </div>
+            <div class="header__menu">
+                <a href="./index.html">
+                    <picture>
+                        <!-- <source srcset="./img/Freshnesecom.webp" type="image/webp"> -->
+                        <img src="./img/AutoLogo.png" class="logo" alt="img"></picture>
+                </a>
+                <div class="header__search">
+                    <select name="uki" id="1" class="header__search-select">
+                        <option value="All categories">Все категории</option>
+                    </select>
+                    <div class="header__input-body">
+                        <input type="text" placeholder="Поиск автомобиля" class="header__search-input">
+                        <a href="#"><picture><source srcset="./img/ic-actions-search.svg" type="image/webp"><img src="./img/ic-actions-search.svg" alt="search img" class="header__search-img"></picture></a>
+                    </div>
+
+                </div>
+                <div class="header__account">
+                    <a href="#" class="header__user"><picture><source srcset="./img/ic-actions-user.svg" type="image/webp"><img src="./img/ic-actions-user.svg" alt=""></picture></a>
+                    <a href="#" class="header__bascet bascet">
+                        <picture>
+                            <!-- <source srcset="./img/ic-ecommerce-basket.svg" type="image/webp"> -->
+                            <img src="./img/pngwing.com.png" alt=""></picture>
+                        <span class="bascet__span">1</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__burger burger">
+        <div class="header__container burger__body" onclick="burger(event, '.header__content_absol')">
+            <span class="burger__center"></span>
+        </div>
+    </div>
+    <nav class="header__nav nav">
+        <div class="nav__container">
+            <ul class="nav__select">
+                <li class="nav__item">
+                    <div class="select__header">
+                        <span class="select__current">Каталог</span>
+                        <div class="select__icon"><picture><source srcset="./img/down.svg" type="image/webp"><img src="./img/down.svg" alt=""></picture></div>
+                    </div>
+                
+                    <div class="select__body">
+                        <!-- <div class="select__item">Bakery</div> -->
+                    </div>
+                </li>
+                <!-- <li class="nav__item">
+                    <div class="select__header">
+                        <span class="select__current">Объявления</span>
+                        <div class="select__icon"><picture><source srcset="./img/down.svg" type="image/webp"><img src="./img/down.svg" alt=""></picture></div>
+                    </div>
+                
+                    <div class="select__body">
+                    </div>
+                </li> -->
+                <!-- <li class="nav__item">
+                    <div class="select__header">
+                        <span class="select__current">Дилеры</span>
+                        <div class="select__icon"><picture><source srcset="./img/down.svg" type="image/webp"><img src="./img/down.svg" alt=""></picture></div>
+                    </div>
+                
+                    <div class="select__body">
+                       
+                    </div>
+                </li> -->
+                <li class="nav__item">
+                    <div class="select__header">
+                        <span class="select__current">Сервис</span>
+                        <div class="select__icon"><picture><source srcset="./img/down.svg" type="image/webp"><img src="./img/down.svg" alt=""></picture></div>
+                    </div>
+                
+                    <div class="select__body">
+                        <!-- <div class="select__item">Drinks</div> -->
+                    </div>
+                </li>
+                <li class="nav__item">
+                    <div class="select__header">
+                        <span class="select__current">Услуги</span>
+                        <div class="select__icon"><picture><source srcset="./img/down.svg" type="image/webp"><img src="./img/down.svg" alt=""></picture></div>
+                    </div>
+                
+                    <div class="select__body">
+                        <!-- <div class="select__item">Kitchen</div> -->
+                    </div>
+                </li>
+                <li class="nav__item">
+                    <div class="select__header">
+                        <span class="select__current">Акции</span>
+                        <div class="select__icon"><picture><source srcset="./img/down.svg" type="image/webp"><img src="./img/down.svg" alt=""></picture></div>
+                    </div>
+                
+                    <div class="select__body">
+                        <!-- <div class="select__item">Special nutrition</div> -->
+                    </div>
+                </li>
+                <!-- <li class="nav__item">
+                    <div class="select__header">
+                        <span class="select__current">Baby</span>
+                        <div class="select__icon"><picture><source srcset="./img/down.svg" type="image/webp"><img src="./img/down.svg" alt=""></picture></div>
+                    </div>
+                
+                    <div class="select__body">
+                        <div class="select__item">Baby</div>
+                    </div>
+                </li>
+                <li class="nav__item">
+                    <div class="select__header">
+                        <span class="select__current">Pharmacy</span>
+                        <div class="select__icon"><picture><source srcset="./img/down.svg" type="image/webp"><img src="./img/down.svg" alt=""></picture></div>
+                    </div>
+                
+                    <div class="select__body">
+                        <div class="select__item">Pharmacy</div>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+</header>
+        <main class="main">
+            <div class="main__container">
+                <!-- <section class="main__blocks">
+                    <div class="main__categoria">
+                        <h3 class="main__title_h3">Меню категорий</h3>
+                        <ul class="main__links links">
+                            <li class="links__item-link"><a href="#">Седан</a></li>
+                            <li class="links__item-link"><a href="#">Внедорожник</a></li>
+                            <li class="links__item-link"><a href="#">Хэтчбек</a></li>
+                            <li class="links__item-link"><a href="#">Универсал</a></li>
+                            <li class="links__item-link"><a href="#">Купе</a></li>
+                        </ul>
+                        <a href="#" class="links__button">Больше категорий</a>
+                    </div>
+                    <div class="main__banner banner">
+                        <div class="banner__item">
+                            <div class="banner__content">
+                                <p class="banner__sub-text_green">Первые фотографии</p>
+                                <h2 class="banner__title">Москвич 6</h2>
+                            </div>
+                            <a href="#" class="banner__button">Read recepies</a>
+                        </div>
+                        <div class="banner__item">
+                            <div class="banner__content">
+                                <p class="banner__sub-text_green">Banner subfocus</p>
+                                <h2 class="banner__title">Space for heading</h2>
+                            </div>
+                            <a href="#" class="banner__button">Read recepies</a>
+                        </div>
+                    </div>
+                </section> -->
+                <section class="main__blocks main__blocks_product">
+                    <div class="main__categoria">
+                        <h3 class="main__title_h3">Меню категорий</h3>
+                        <ul class="main__links links">
+                            <li class="links__item-link"><a href="#">Седан</a></li>
+                            <li class="links__item-link"><a href="#">Внедорожник</a></li>
+                            <li class="links__item-link"><a href="#">Хэтчбек</a></li>
+                            <li class="links__item-link"><a href="#">Универсал</a></li>
+                            <li class="links__item-link"><a href="#">Купе</a></li>
+                        </ul>
+                        <a href="#" class="links__button">Больше категорий</a>
+                    </div>
+                    <div class="main__banner product">
+                        <div class="product__item">
+                            <picture><img src="./img/moskvich.webp" alt="img" class="product__img"></picture>
+                            <h3 class="product__title">Москвич 3</h3>
+                            <p class="product__sub-text">Стандарт</p>
+                            <div class="product__content">
+                                <p class="product__price">1 600 000 ₽</p>
+                                <a href="#" class="product__button">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="product__item сurrent">
+                            <!-- <p class="current__percent">- 36 %</p> -->
+                            <picture><img src="./img/lexus.jpg" alt="img" class="product__img"></picture>
+                            <h3 class="product__title">Lexus RX</h3>
+                            <p class="product__sub-text">Comfort</p>
+                            <div class="product__content">
+                                <p class="product__price">6 800 000 ₽
+                                    <!-- <span class="current__old">48.56</span> -->
+                                </p>
+                                <a href="#" class="product__button">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="product__item сurrent">
+                            <p class="current__percent">- 8 %</p>
+                            <picture>
+                                <img src="./img/porshe.jpg" alt="img" class="product__img"></picture>
+                            <h3 class="product__title">Porsche Cayenne</h3>
+                            <p class="product__sub-text">Coupe</p>
+                            <div class="product__content">
+                                <p class="product__price">14 800 000 ₽ <span class="current__old">16 000 000</span></p>
+                                <a href="#" class="product__button">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- <section class="main__blocks main__blocks_product">
+                    <div class="main__categoria">
+                        <h3 class="main__title_h3">Best from Farmers</h3>
+                        <ul class="main__links links">
+                            <li class="links__item-link"><a href="#">Carrots</a></li>
+                            <li class="links__item-link"><a href="#">Tomatoes</a></li>
+                            <li class="links__item-link"><a href="#">Potatoes</a></li>
+                            <li class="links__item-link"><a href="#">Chicken</a></li>
+                            <li class="links__item-link"><a href="#">Pork</a></li>
+                        </ul>
+                        <a href="#" class="links__button">More categories</a>
+                    </div>
+                    <div class="main__banner product">
+                        <div class="product__item">
+                            <picture><source srcset="./img/products__img.webp" type="image/webp"><img src="./img/products__img.png" alt="img" class="product__img"></picture>
+                            <h3 class="product__title">Product Title</h3>
+                            <p class="product__sub-text">Space for a small product description</p>
+                            <div class="product__content">
+                                <p class="product__price">1.48 USD</p>
+                                <a href="#" class="product__button">Buy now</a>
+                            </div>
+                        </div>
+                        <div class="product__item сurrent">
+                            <p class="current__percent">- 36 %</p>
+                            <picture>
+                                <source srcset="./img/products__img.webp" type="image/webp">
+                                <img src="./img/products__img.png" alt="img" class="product__img">
+                            </picture>
+                            <h3 class="product__title">Product Title</h3>
+                            <p class="product__sub-text">Space for a small product description</p>
+                            <div class="product__content">
+                                <p class="product__price">0.28 USD <span class="current__old">48.56</span></p>
+                                <a href="#" class="product__button">Buy now</a>
+                            </div>
+                        </div>
+                        <div class="product__item сurrent">
+                            <p class="current__percent">- 36 %</p>
+                            <picture><source srcset="./img/products__img.webp" type="image/webp"><img src="./img/products__img.png" alt="img" class="product__img"></picture>
+                            <h3 class="product__title">Product Title</h3>
+                            <p class="product__sub-text">Space for a small product description</p>
+                            <div class="product__content">
+                                <p class="product__price">1.12 USD <span class="current__old">48.56</span></p>
+                                <a href="#" class="product__button">Buy now</a>
+                            </div>
+                        </div>
+                    </div>
+                </section> -->
+            </div>
+            <div class="rows__container">
+                <section class="main__blocks main__blocks_noFlex">
+                    <div class="our__container">
+                        <div class="main__our">
+                            <h3 class="main__title_h3">Наши покупатели пишут</h3>
+                            <a href="#" class="main__button_back-none">Больше</a>
+                        </div>
+                    </div>
+
+                        <div class="main__rows rows">
+                            <div class="rows__strelka rows__strelka-left" id="scroll-left">
+                                <picture><source srcset="./img/ic-chevron-left.svg" type="image/webp"><img src="./img/ic-chevron-left.svg" alt=""></picture>
+                            </div>
+                            <div class="rows__strelka rows__strelka-right" id="scroll-right">
+                                <picture><source srcset="./img/ic-chevron-left.svg" type="image/webp"><img src="./img/ic-chevron-left.svg" alt=""></picture>
+                            </div>
+                            <div class="rows__content" id="scroll-content">
+                                <div class="rows__comment">
+                                    <p class="rows__text">“ Очень приятный опыт покупки автомобиля в этом автосалоне. Я рекомендую этот автосалон всем, кому нужно купить новый автомобиль. “</p>
+                                    <p class="rows__NameandSurname">Александр Иванов</p>
+                                    <picture><source srcset="./img/Ellipse1.webp" type="image/webp"><img src="./img/Ellipse1.png" alt="ava" class="rows__avatarka"></picture>
+                                </div>
+                                <div class="rows__comment">
+                                    <p class="rows__text">“ Продавцы были довольно дружелюбными и не назойливыми. Если я буду покупать новый автомобиль, я обязательно вернусь в этот автосалон. “</p>
+                                    <p class="rows__NameandSurname">Екатерина Петрова</p>
+                                    <picture><source srcset="./img/Ellipse3.webp" type="image/webp"><img src="./img/Ellipse3.png" alt="ava" class="rows__avatarka"></picture>
+                                </div>
+                                <div class="rows__comment">
+                                    <p class="rows__text">“ Продавцы были профессиональными и очень дружелюбными. Я купил здесь свой новый автомобиль, и я был очень доволен весь процессом.“</p>
+                                    <p class="rows__NameandSurname">Дмитрий Смирнов</p>
+                                    <picture><source srcset="./img/Ellipse4.webp" type="image/webp"><img src="./img/Ellipse4.png" alt="ava" class="rows__avatarka"></picture>
+                                </div>
+                                <div class="rows__comment">
+                                    <p class="rows__text">“ Большое спасибо автосалону за отличный сервис и внимательное отношение к клиентам! Мне очень понравился выбор машин, просторный и уютный зал ожидания“</p>
+                                    <p class="rows__NameandSurname">Олег Кузнецов</p>
+                                    <picture><source srcset="./img/Ellipse2.webp" type="image/webp"><img src="./img/Ellipse2.png" alt="ava" class="rows__avatarka"></picture>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+            </div>
+            <div class="main__container">
+                <section class="main__blocks">
+                        <div class="main__our">
+                            <h3 class="main__title_h3">Также могут заинтересовать</h3>
+                            <a href="#" class="main__button_back-none">Больше</a>
+                        </div>
+                        <div class="main__banner product_center">
+                            <div class="product__item">
+                                <picture>
+                                    
+                                    <img src="./img/kia5.jpg" alt="img" class="product__img"></picture>
+                                <h3 class="product__title">Kia K5</h3>
+                                <p class="product__sub-text">Classic</p>
+                                <div class="product__content">
+                                    <p class="product__price">3 450 000 ₽</p>
+                                    <a href="#" class="product__button">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <picture><img src="./img/logan.jpg" alt="img" class="product__img"></picture>
+                                <h3 class="product__title">Renault Logan</h3>
+                                <p class="product__sub-text">Life</p>
+                                <div class="product__content">
+                                    <p class="product__price">1 549 000 ₽</p>
+                                    <a href="#" class="product__button">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="product__item сurrent">
+                                <p class="current__percent">- 13 %</p>
+                                <picture>
+                                    
+                                    <img src="./img/benzE.jpg" alt="img" class="product__img">
+                                </picture>
+                                <h3 class="product__title">Mercedes-Benz E-class</h3>
+                                <p class="product__sub-text">E 220 d 4MATIC Sport</p>
+                                <div class="product__content">
+                                    <p class="product__price">7 850 000 ₽ <span class="current__old">9 000 000</span></p>
+                                    <a href="#" class="product__button">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <picture><img src="./img/pajero.jpg" alt="img" class="product__img"></picture>
+                                <h3 class="product__title">Mitsubishi PAJERO SPORT</h3>
+                                <p class="product__sub-text">Intense</p>
+                                <div class="product__content">
+                                    <p class="product__price">5 060 000 ₽</p>
+                                    <a href="#" class="product__button">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </section>
+            </div>
+            <div class="main__container NoBox">
+                <section class="main__blocks main__blocks_noFlex-noB">
+                        <div class="main__our">
+                            <h3 class="main__title_h3">Читайте наш блог</h3>
+                            <a href="#" class="main__button_back-none">Больше</a>
+                        </div>
+                        <div class="main__block-blog block-blog">
+                            <div class="block-blog__item1">
+                                <p class="block-blog__tips_before block-blog__tips_before-absolute">Игры</p>
+                                <h2 class="block-blog__title_white">Кто же должен уступить? <br> Запутанная задача на знание ПДД</h2>
+                                <div class="block-blog__user block-blog__user_white">
+                                    <p class="block-blog__label">ИГРЫ - РЕДАКЦИЯ</p> 
+                                    <p class="block-blog__data">20. 6. 2023</p>
+                                </div>
+                            </div>
+                            <div class="block-blog__item2">
+                                <picture><img src="./img/blog2.webp" alt="img" class="block-blog__img"></picture>
+                                <p class="block-blog__tips_before">РАЗБОР</p>
+                                <h3 class="block-blog__title">Nissan X-Trail, который едва не разорвало пополам: о чём не рассказывает продавец</h3>
+                                <div class="block-blog__user">
+                                    <p class="block-blog__label">РАЗБОР - КОМАНДА АВТОРИТЕТ</p> 
+                                    <p class="block-blog__data">10. 3. 2023</p>
+                                </div>
+                            </div>
+                            <div class="block-blog__item3 item3">
+                                <div class="item3__item">
+                                    <div class="item3__sub-item">
+                                        <p class="item3__title">Первый обзор нового Lexus RX</p>
+                                        <div class="block-blog__user">
+                                            <p class="block-blog__label">ТЕСТЫ - АЛЕКСАНДР АФАНАСЬЕВ</p> 
+                                            <p class="block-blog__data">19. 2. 2023</p>
+                                        </div>
+                                    </div>
+                                    <picture><img src="./img/blog3.webp" alt="img" class="item3__img"></picture>
+                                </div>
+                                <div class="item3__item">
+                                    <div class="item3__sub-item">
+                                        <p class="item3__title">Концерн BYD привезёт на автосалон в Шанхае 1100-сильный электросуперкар</p>
+                                        <div class="block-blog__user">
+                                            <p class="block-blog__label">НОВОСТИ - АЛЕКСАНДР ОРЕХОВ</p> 
+                                            <p class="block-blog__data">16. 1. 2023</p>
+                                        </div>
+                                    </div>
+                                    <picture><img src="./img/blog4.webp" alt="img" class="item3__img"></picture>
+                                </div>
+                                <div class="item3__item">
+                                    <div class="item3__sub-item">
+                                        <p class="item3__title">Автокредитование в России вышло на рекордные объёмы</p>
+                                        <div class="block-blog__user">
+                                            <p class="block-blog__label">НОВОСТИ - КИРИЛЛ МАЛЫШЕВ</p> 
+                                            <p class="block-blog__data">17. 6. 2020</p>
+                                        </div>
+                                    </div>
+                                    <picture><img src="./img/blog5.webp" alt="img" class="item3__img"></picture>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+    <div class="footer__container NoBox">
+        <!-- <div class="footer__info">
+            <div class="footer__item">
+                <h2 class="footer__title">Get in touch</h2>
+                <p class="footer__text_green">About Us</p>
+                <p class="footer__text_green">Careers</p>
+                <p class="footer__text_green">Press Releases</p>
+                <p class="footer__text_green">Blog</p>
+            </div>
+            <div class="footer__item">
+                <h2 class="footer__title">Connections</h2>
+                <p class="footer__text_green">Facebook</p>
+                <p class="footer__text_green">Twitter</p>
+                <p class="footer__text_green">Instagram</p>
+                <p class="footer__text_green">Youtube</p>
+                <p class="footer__text_green">LinkedIn</p>
+            </div>
+            <div class="footer__item">
+                <h2 class="footer__title">Earnings</h2>
+                <p class="footer__text_green">Become an Affiliate</p>
+                <p class="footer__text_green">Advertise your product</p>
+                <p class="footer__text_green">Sell on Market</p>
+            </div>
+            <div class="footer__item">
+                <h2 class="footer__title">Account</h2>
+                <p class="footer__text_green">Your account</p>
+                <p class="footer__text_green">Returns Centre</p>
+                <p class="footer__text_green">100 % purchase protection</p>
+                <p class="footer__text_green">Chat with us</p>
+                <p class="footer__text_green">Help</p>
+            </div>
+        </div>
+        <div class="footer__tags">
+            <h2 class="footer__title">Product tags</h2>
+            <p class="footer__text">Beans</p>
+            <p class="footer__text">Carrots</p>
+            <p class="footer__text">Apples</p>
+            <p class="footer__text">Garlic</p>
+            <p class="footer__text">Mushrooms</p>
+            <p class="footer__text">Tomatoes</p>
+            <p class="footer__text">Chilli peppers</p>
+            <p class="footer__text">Broccoli</p>
+            <p class="footer__text">Watermelons</p>
+            <p class="footer__text">Oranges</p>
+            <p class="footer__text">Bananas</p>
+            <p class="footer__text">Grapes</p>
+            <p class="footer__text">Cherries</p>
+            <p class="footer__text">Meat</p>
+            <p class="footer__text">Seo tag</p>
+            <p class="footer__text">Fish</p>
+            <p class="footer__text">Seo tag</p>
+            <p class="footer__text">Fresh food</p>
+            <p class="footer__text">Lemons</p>
+        </div> 
+            <p class="footer__copyright">Copyright © 2023 petrbilek.com</p>
+        -->
+        <div class="header__contacts">
+            <div class="header__contact">
+                <a href="#" class="header__contact-item">Связаться с нами</a>
+                <p class="header__contact-item">+7(920)447-86-43</p>
+                <p class="header__contact-item">autoritet@mail.ru</p>
+            </div>
+            <ul class="header__link">
+                <li class="header__item-link"><a href="#">Блог</a></li>
+                <li class="header__item-link"><a href="#">О нас</a></li>
+                <li class="header__item-link"><a href="#">Карьера</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+    </div>
+    <script src="./js/script.min.js"></script>
+</body>
+</html>
